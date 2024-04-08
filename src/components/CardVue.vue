@@ -22,8 +22,8 @@ export default {
     return {
       open: false,
       products: [
-        { id: 1, name: 'Product 1', description: 'This is product 1', image: 'public/Big Momo.jpg', price: 10},
-        { id: 2, name: 'Product 2', description: 'This is product 2', image: 'public/Big Momo.jpg', price: 20},
+        { id: 1, name: 'Product 1', description: 'This is product 1', image: '/Big Momo.jpg', price: 10},
+        { id: 2, name: 'Product 2', description: 'This is product 2', image: '/Big Momo.jpg', price: 20},
         // Добавьте больше продуктов здесь...
       ]
     };
