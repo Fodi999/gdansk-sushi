@@ -5,6 +5,12 @@ const app = express()
 
 app.use(express.json())
 
+// Обработка CORS должна быть перед определением маршрутов
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.post('/orders', async (req, res) => {
   const order = req.body
 

@@ -50,7 +50,7 @@ export default {
 
     const submitOrder = async () => {
       try {
-        const response = await axios.post('https://your-api-url/orders', 
+        const response = await axios.post('https://gdansk-sushi.vercel.app/orders', 
         {
           items: basketStore.items,
           totalPrice: basketStore.totalPrice,
